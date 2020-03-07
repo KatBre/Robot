@@ -26,6 +26,8 @@ public class Main {
 
                 RuchRobota ruch = RuchRobota.valueOf(rodzajRuchu.toUpperCase()); //konwersja
                 robot.poruszRobotem(ruch);
+            } else if (!komenda.equalsIgnoreCase("quit")) {
+                System.err.println("Nie rozpoznaję komendy");
             }
         } while (!komenda.equalsIgnoreCase("quit"));
     }
